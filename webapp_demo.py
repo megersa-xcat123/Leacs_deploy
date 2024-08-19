@@ -2,7 +2,7 @@ import numpy as np
 import pickle
 import streamlit as st 
 import background_test as bgd
-loaded_model = pickle.load(open('/home/ubuntu/streamlite_doc/GBM_model.sav', 'rb'))
+loaded_model = pickle.load(open('GBM_model.sav', 'rb'))
 
 def loan_eligibility_prediction(input_data):
     #change into the numpy array
@@ -17,7 +17,6 @@ def loan_eligibility_prediction(input_data):
         return "The subscriber is eligible for the services"
 def main():
     
-
     # provide title for the App
     st.title("Loan Eligibility Prediction")
     #bgd.sidebar_bg('/home/ubuntu/streamlite_doc/ethio-telecom-office.jpg')

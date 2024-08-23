@@ -12,9 +12,9 @@ def loan_eligibility_prediction(input_data):
     prediction = loaded_model.predict([input_data])
     print(prediction)
     if (prediction[0] == 0):
-        return'the customer is not Eligible for the services'
+        return'the customer is Eligible for the services'
     else:
-        return "The subscriber is eligible for the services"
+        return "The subscriber is not eligible for the services"
 def main():
     
     # provide title for the App
